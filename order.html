@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order page</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+    
+
+    <div class="categories-section">
+        <h1>Categories</h1>
+        <div class="categories">
+            <div class="category" onclick="scrollToSection('fruits')">
+                <img src="fruits.jpg" alt="Fruits">
+                <span>Fruits</span>
+            </div>
+            <div class="category" onclick="scrollToSection('vegetables')">
+                <img src="vegetables.jpg" alt="Vegetables">
+                <span>Vegetables</span>
+            </div>
+            <div class="category" onclick="scrollToSection('dairy')">
+                <img src="dairyproduce.jpg" alt="Dairy Produce">
+                <span>Dairy Produce</span>
+            </div>
+            <div class="category" onclick="scrollToSection('meat-seafood')">
+                <img src="meatandseafood.jpg" alt="Meat and Seafood">
+                <span>Meat and Seafood</span>
+            </div>
+            <div class="category" onclick="scrollToSection('baking')">
+                <img src="bakingandcooking.jpg" alt="Baking and Cooking Ingredients">
+                <span>Baking and Cooking Ingredients</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container">
+        <h2>Fruits</h2>
+        <div class="section" id="fruits">
+            <div class="item">
+                <img src="banana.png" alt="Banana">
+                <span>Banana (Rs.200/kg)</span>
+                <input type="number" min="0" id="banana-qty" placeholder="Kg">
+                <button onclick="addItem('Banana', 200, 'banana-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="apple.png" alt="Apple">
+                <span>Apple (Rs.150/kg)</span>
+                <input type="number" min="0" id="apple-qty" placeholder="Kg">
+                <button onclick="addItem('Apple', 150, 'apple-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="orange.jpg" alt="Orange">
+                <span>Orange (Rs.180/kg)</span>
+                <input type="number" min="0" id="orange-qty" placeholder="Kg">
+                <button onclick="addItem('Orange', 180, 'orange-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="graphes.jpg" alt="Grapes">
+                <span>Grapes (Rs.250/kg)</span>
+                <input type="number" min="0" id="grapes-qty" placeholder="Kg">
+                <button onclick="addItem('Grapes', 250, 'grapes-qty')">Add</button>
+            </div>
+        
+            <div class="item">
+                <img src="pineapple.jpg" alt="Pineapple">
+                <span>Pineapple (Rs.100/each)</span>
+                <input type="number" min="0" id="pineapple-qty" placeholder="Quantity">
+                <button onclick="addItem('Pineapple', 100, 'pineapple-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="strawberry.png" alt="Strawberry">
+                <span>Strawberry (Rs.400/kg)</span>
+                <input type="number" min="0" id="strawberry-qty" placeholder="Kg">
+                <button onclick="addItem('Strawberry', 400, 'strawberry-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="mango.jpg" alt="mango">
+                <span>Mango (Rs.60/kg)</span>
+                <input type="number" min="0" id="mango-qty" placeholder="Kg">
+                <button onclick="addItem('mango', 60, 'mango-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="guava.jpg" alt="Guava">
+                <span>Guava (Rs.70/kg)</span>
+                <input type="number" min="0" id="Guava-qty" placeholder="Kg">
+                <button onclick="addItem('Guava', 70, 'Guava-qty')">Add </button>
+            </div>
+        </div>
+
+        <h2>Vegetables</h2>
+        <div class="section" id="vegetables">
+            <div class="item">
+                <img src="carrot.jpg" alt="Carrot">
+                <span>Carrot (Rs.350/kg)</span>
+                <input type="number" min="0" id="carrot-qty" placeholder="Kg">
+                <button onclick="addItem('Carrot', 350, 'carrot-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="broccolli.jpg" alt="Broccoli">
+                <span>Broccoli (Rs.230/kg)</span>
+                <input type="number" min="0" id="broccoli-qty" placeholder="Kg">
+                <button onclick="addItem('Broccoli', 230, 'broccoli-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="potato.jpg" alt="Potato">
+                <span>Potato (Rs.40/kg)</span>
+                <input type="number" min="0" id="potato-qty" placeholder="Kg">
+                <button onclick="addItem('Potato', 40, 'potato-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="tomato.jpg" alt="Tomato">
+                <span>Tomato (Rs.60/kg)</span>
+                <input type="number" min="0" id="tomato-qty" placeholder="Kg">
+                <button onclick="addItem('Tomato', 60, 'tomato-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="onion.jpg" alt="Onion">
+                <span>Onion (Rs.50/kg)</span>
+                <input type="number" min="0" id="onion-qty" placeholder="Kg">
+                <button onclick="addItem('Onion', 50, 'onion-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="cucumber.jpg" alt="Cucumber">
+                <span>Cucumber (Rs.30/kg)</span>
+                <input type="number" min="0" id="cucumber-qty" placeholder="Kg">
+                <button onclick="addItem('Cucumber', 30, 'cucumber-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="spinach.jpg" alt="Spinach">
+                <span>Spinach (Rs.40/bunch)</span>
+                <input type="number" min="0" id="spinach-qty" placeholder="Bunch">
+                <button onclick="addItem('Spinach', 40, 'spinach-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="capsicum.jpg" alt="Capsicum">
+                <span>Capsicum (Rs.90/kg)</span>
+                <input type="number" min="0" id="capsicum-qty" placeholder="Kg">
+                <button onclick="addItem('Capsicum', 90, 'capsicum-qty')">Add</button>
+            </div>
+            
+        </div>
+
+        <h2>Dairy Produce</h2>
+        <div class="section" id="dairy">
+            <div class="item">
+                <img src="milk.jpg" alt="Milk">
+                <span>Milk (Rs.450/carton)</span>
+                <input type="number" min="0" id="milk-qty" placeholder="Qty">
+                <button onclick="addItem('Milk', 450, 'milk-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="cheese.jpg" alt="Cheese">
+                <span>Cheese (Rs.700/qty)</span>
+                <input type="number" min="0" id="cheese-qty" placeholder="Qty">
+                <button onclick="addItem('Cheese', 700, 'cheese-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="butter.png" alt="Butter">
+                <span>Butter (Rs.120/250g)</span>
+                <input type="number" min="0" id="butter-qty" placeholder="Grams">
+                <button onclick="addItem('Butter', 120, 'butter-qty')">Add</button>
+            </div>
+        
+            <div class="item">
+                <img src="yoghurt.jpg" alt="Yogurt">
+                <span>Yogurt (Rs.90/500g)</span>
+                <input type="number" min="0" id="yogurt-qty" placeholder="Grams">
+                <button onclick="addItem('Yogurt', 90, 'yogurt-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="ghee.jpg" alt="Ghee">
+                <span>Ghee (Rs.500/1kg)</span>
+                <input type="number" min="0" id="ghee-qty" placeholder="Kg">
+                <button onclick="addItem('Ghee', 500, 'ghee-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="whippedcream.jpg" alt="whipped-cream">
+                <span>Whipped-cream (Rs.70/200ml)</span>
+                <input type="number" min="0" id="whipped-cream-qty" placeholder="ml">
+                <button onclick="addItem('whipped-cream', 70, 'Whipped-cream-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="frozenyoghurt.jpg" alt="frozen-yoghurt">
+                <span>Frozen Yoghurt(Rs.650/qty)</span>
+                <input type="number" min="0" id="frozen-yoghurt-qty" placeholder="Qty">
+                <button onclick="addItem('Frozen Yoghurt', 650, 'frozen-yoghurt-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="ice-cream.png" alt="ice-cream">
+                <span>Ice Cream (Rs.500/qty)</span>
+                <input type="number" min="0" id="ice-cream-qty" placeholder="Qty">
+                <button onclick="addItem('Ice Cream', 500, 'ice-cream-qty')">Add</button>
+            </div>
+  
+        </div>
+
+    
+
+        <h2>Meat and Seafood</h2>
+        <div class="section" id="meat-seafood">
+            <div class="item">
+                <img src="chicken.jpg" alt="Chicken">
+                <span>Chicken (Rs.1150/kg)</span>
+                <input type="number" min="0" id="chicken-qty" placeholder="Kg">
+                <button onclick="addItem('Chicken', 1150, 'chicken-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="fish.jpg" alt="Fish">
+                <span>Fish (Rs.800/kg)</span>
+                <input type="number" min="0" id="fish-qty" placeholder="Kg">
+                <button onclick="addItem('Fish', 800, 'fish-qty')">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="prawns.jpg" alt="Prawns">
+                <span>Prawns (Rs.700/kg)</span>
+                <input type="number" min="0" id="prawns-qty" placeholder="Kg">
+                <button onclick="addItem('Prawns', 700, 'prawns-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="eggs.jpeg" alt="Eggs">
+                <span>Eggs (Rs.60/each)</span>
+                <input type="number" min="0" id="eggs-qty" placeholder="Quantity">
+                <button onclick="addItem('Eggs', 5, 'eggs-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="Crab.jpg" alt="Crab">
+                <span>Crab (Rs.600/kg)</span>
+                <input type="number" min="0" id="crab-qty" placeholder="Kg">
+                <button onclick="addItem('Crab', 600, 'crab-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="lobster.jpg" alt="Lobster">
+                <span>Lobster (Rs.1000/kg)</span>
+                <input type="number" min="0" id="lobster-qty" placeholder="Kg">
+                <button onclick="addItem('Lobster', 1000, 'lobster-qty')">Add</button>
+            </div>
+          
+        </div>
+
+        <h2>Baking and Cooking Ingredients</h2>
+        <div class="section" id="baking">
+            <div class="item">
+                <img src="flour.jpg" alt="Flour">
+                <span>Flour (Rs.350/qty)</span>
+                <input type="number" min="0" id="flour-qty" placeholder="Qty">
+                <button onclick="addItem('Flour', 350, 'flour-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="sugar.jpg" alt="Sugar">
+                <span>Sugar (Rs.150/qty)</span>
+                <input type="number" min="0" id="sugar-qty" placeholder="Qty">
+                <button onclick="addItem('Sugar', 150, 'sugar-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="salt.jpg" alt="Salt">
+                <span>Salt (Rs.200/kg)</span>
+                <input type="number" min="0" id="salt-qty" placeholder="Kg">
+                <button onclick="addItem('Salt', 20, 'salt-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="oil.jpg" alt="Cooking Oil">
+                <span>Cooking Oil (Rs.150/litre)</span>
+                <input type="number" min="0" id="oil-qty" placeholder="Litre">
+                <button onclick="addItem('Cooking Oil', 150, 'oil-qty')">Add</button>
+            </div>
+        
+            <div class="item">
+                <img src="bakingpowder.jpg" alt="Baking Powder">
+                <span>Baking Powder (Rs.100/200g)</span>
+                <input type="number" min="0" id="baking_powder-qty" placeholder="Grams">
+                <button onclick="addItem('Baking Powder', 100, 'baking_powder-qty')">Add</button>
+            </div>
+            <div class="item">
+                <img src="yeast.jpg" alt="Yeast">
+                <span>Yeast (Rs.150/100g)</span>
+                <input type="number" min="0" id="yeast-qty" placeholder="Grams">
+                <button onclick="addItem('Yeast', 150, 'yeast-qty')">Add</button>
+            </div>
+        
+        </div>
+
+        <h2>Order Summary</h2>
+        <table id="order-summary">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <div class="total">
+            <strong>Total Price: Rs.<span id="total-price">0.00</span></strong>
+        </div>
+
+        <div class="buttons">
+            <button onclick="saveFavourite()">Save as Favourite</button>
+            <button onclick="applyFavourite()">Apply Favourite</button>
+            <button onclick="buyNow()">Buy Now</button>
+            
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+
+
+
+</body>
+</html>
